@@ -1,5 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@500&display=swap');
 
+/*o que vai afetar a página toda*/
 * {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*estilizar o body*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#3b82f6, #4a7dff);
+}
+
+/*container é a div que contém todo o projeto*/
+#container {
+  background-color: #f0f8ff;
+  padding: 18px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*search é a div do form para pesquisa*/
+#search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #bdbdbd;
+  padding: 4px 12px;
+  border-radius: 10px;
+}
+
+#search input {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  width: 100%;
+}
+
+#search input:focus-visible {
+  outline: none;
+}
+
+#search button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/*div weather*/
+#weather {
+  margin-top: 20px;
 }
