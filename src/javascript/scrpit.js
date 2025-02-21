@@ -20,16 +20,26 @@ document.querySelector('#search').addEventListener('submit', (event) => {
 
 // sobre os resultados
   if (json.cod === 200) {
-    showInfo('FIQUEI AQUIIII!!!')
+    showInfo({
+      city: json.name,
+      country: json.sys.country,
+      temp: json.main.temp,
+      tempMax: json.main.temp_max,
+      tempMin: json.main.min,
+      description: json.weather[0].description,
+      tempIcon: json.weather[0].icon,
+      windSpeed: json.wind.speed,
+      humidity: json.main.humidity,
+    });
   } else {
     showAlert('Não foi possível localizar...')
   }
 
 });
 
-// função para guardar toda a informação do if
+// função para guardar e MOSTRAR toda a informação do if
 function showInfo(json) {
-
+  //FIQUEI AQUI!!!!!!!
 }
 
 // função para exibir as informações
